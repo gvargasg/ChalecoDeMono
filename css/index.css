@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+/*              GRID BODY            */
+
+.container{
+    display: grid;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto;
+}
+
+/*               HEADER                */
+
+.header{
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    background-color: plum;
+}
+.logo{
+    width: 200px;
+}
+.menu{
+    display: flex;
+}
+.menu__list{
+    display: flex;
+    list-style: none;
+}
+.menu__link{
+    padding: 20px;
+}
+.burger{
+    display: none;
+}
+
+/*              MAIN                */
+
+.main{
+    grid-area: main;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.banner__image{
+    width: 100%;
+}
+.banner__text{
+    text-align: center;
+    margin: 30px 200px;
+}
+.lo-nuevo__section, .ayd__section{
+    padding-left: 10%;
+}
+.lo-nuevo__section__title{
+    margin-top: 5%;
+}
+.card{
+    width: 15%;
+    height: fit-content;
+    margin: 30px 20px;
+    display: inline-block;
+}
+.card__image{
+    width: 100%;
+}
+.card__text{
+    margin: 5%;
+}
+.card__title{
+    font-family: 'Alef', sans-serif;
+    font-weight: 700;
+}
+.card__description{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+.card__button{
+    line-height: 5;
+    padding: 5%;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.ayd-card__button{
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    margin: 40%;
+    border: none;
+}
+.article{
+    display: table;
+margin: 80px;
+}
+.article__content{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: 2;
+}
+.article__image{
+    width: 500px;
+    max-height: 300px;
+}
+.article__button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.reparacion__section{
+    margin: 80px;
+}
+.reparacion{
+    width: 500px;
+    height: fit-content;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: inline-block;
+}
+.antes-y-despues__section{
+    margin: 1px 180px;
+}
+.filter__title, .filter__button{
+    display: inline;
+    margin-left: 1070px;
+    margin-top: 50px;
+}
+.filter__button{
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+}
+.filters{
+    line-height: 4;
+    margin-left: 80px;
+}
+aside{
+    width: 300px;
+    float: left;
+}
+.product-section{
+    margin-left: 500px;
+}
+.cargar__button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    margin-left: 800px;
+    border: none;
+}
+.cargar__text{
+    text-align: center;
+    margin-left: 250px;
+}
+.contact-form{
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.form{
+    margin-left: 500px;
+}
+.input, .label{
+    display: table-cell;
+}
+.input{
+    width: 400px;
+}
+
+/*              FOOTER              */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    background-color: plum;
+}
+.logo, .footer__links-ayuda, .footer__links-despachos, .footer__form{
+    display: inline-block;
+    padding: 30px 90px;
+    line-height: 2;
+    vertical-align: top;
+    }
+.footer-copyrights{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.form-button{
+    background-color: blueviolet;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+/*               MOBILE                   */
+@media screen and (max-width: 768px) {
+
+/*HEADER MOBILE*/
+    .burger{
+    display: inline;
+    margin-right: 50px;
+}
+.menu{
+    display: none;
+}
+.header{
+    grid-area: header;
+    background-color: plum;
+    justify-content: space-between;
+}
+/*MAIN MOBILE*/
+.card__title{
+margin-left: 0px;
+}
+.card__title, .card{
+    display: inline;
+    margin-left: 0px;
+}
+.card__rate {
+    margin-left: 20px;
+}
+.card__button{
+    padding: 15px;
+}
+.ayd-card__button{
+    margin: 0px;
+    padding: 15px;
+}
+/* NOSOTROS MOBILE*/
+.banner__text{
+    display: flex;
+    margin: 50px;
+}
+.article__image, .article__content{
+    display: inline;
+}
+}

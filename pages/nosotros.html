@@ -6,36 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaleco de Mono</title>
     <link rel="stylesheet" href="../css/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body class="container">
+<body>
     <header class="header">
-        <!-- Header Logo -->
-                <img class="logo" src="../images/Frame.svg" alt="">
-        <!-- Menú -->
-        <nav>
-            <div class="burger">
-                <img src="../images/menu_24px.svg" alt="menu button">
-            </div>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">INICIO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="./nosotros.html">NOSOTROS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/reparatuchaleco.html">REPARA TU CHALECO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/contacto.html">CONTACTO</a>
-                </li>  
-            </ul>
-        </nav>
-            </header>
-            <main class="main">
+<!-- Menú -->
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="../images/Frame.svg" alt="logo" >
+        </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reparatuchaleco.html">Repara tu Chaleco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+          
+      </div>
+    </div>
+  </nav>
+<!-- Right elements -->
+</nav>
+<div class="d-flex align-items-center nav__items__right">
+      <div class="p-2">
+        <img src="../images/search.svg"  height="25" alt="Search icon" loading="lazy"/>
+      </div>
+      <div class="p-2">
+          <img src="../images/cart.svg"  height="25" alt="Shopping cart icon" loading="lazy"/>
+      </div>
+      <div class="p-2">
+        <img src="../images/Account.svg" class="rounded-circle" height="25" alt="Account icon" loading="lazy"/>
+    </div>
+</div>
+<!-- Right elements -->
+
+    </header>
+<main class="main">
 <!-- Banner -->
             <div class="wrapper">
             <img class="wrapper__image" src="../images/nosotros.jpg" alt="imagen de pareja tejiendo">
@@ -56,59 +78,76 @@
         </div>
 <!-- Sección Materiales -->
     <section class="article">
-        <img class="article__image" src="../images/materiales.jpg" alt=""  >
-        <span class="article__content">
-            <h4>MATERIALES</h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos voluptatibus enim! Ducimus soluta eius provident. Doloremque molestiae cupiditate ducimus. Nulla odio reprehenderit enim expedita quasi. Commodi cupiditate repellendus quaerat!
-        </span>
+        <div class="row">
+            <div class="col-md-5">
+                <img class="article__image" src="../images/materiales.jpg" alt="" >
+             </div>
+            <div class="col-md-7">
+                <h4>MATERIALES</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos voluptatibus enim! Ducimus soluta eius provident. Doloremque molestiae cupiditate ducimus. Nulla odio reprehenderit enim expedita quasi. Commodi cupiditate repellendus quaerat!</p> 
+            </div>
+        </div>
+        </div>
     </section>
 <!-- Sección Reciclaje -->
     <section class="article">
-        <span class="article__content">
+        <div class="row">
+            <div class="col-md-7">
             <h4>RECICLAJE</h4>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos voluptatibus enim! Ducimus soluta eius provident. Doloremque molestiae cupiditate ducimus. Nulla odio reprehenderit enim expedita quasi. Commodi cupiditate repellendus quaerat!
-        </span>
+        </div>
+        <div class="col-md-5">
         <img class="article__image" src="../images/reciclaje.jpg" alt=""  >
+        </div>
+    </div>
     </section>  
     </main>
 <!-- Footer -->
-<footer class="footer">
-    <!-- Footer Logo -->
-        <img class="logo" src="../images/Frame.svg" alt="">
-    <!-- Footer Sección Ayuda -->
-            <ul class="footer__links-ayuda">
-                <h4>AYUDA</h4>
-                    <li>Políticas de Privacidad</li>
-                    <li>Preguntas Frecuentes</li>
-                    <li>Contáctanos</li>
-            </ul>
-    <!-- Footer Sección Despachos -->
-            <ul class="footer__links-despachos">
-                    <H4>DESPACHOS</H4>
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0 footer__style">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                  <img class="logo" src="../images/Frame.svg" alt="logo" >
+                  <p class="small mb-0">&copy; Chaleco de Mono 2022. Todos los derechos reservados. 
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">AYUDA</h5>
+                    <ul class="list-unstyled">
+                        <li>Políticas de Privacidad</li>
+                        <li>Términos y Condiciones</li>
+                        <li>Preguntas Frecuentes</li>
+                        <li>Contáctanos</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">DESPACHOS</h5>
+                    <ul class="list-unstyled">
                         <li>Medios de Pago</li>
                         <li>Tiempos de Despacho</li>
-                        <li>Términos y Condiciones</li>
                         <li>Seguimiento de mi Pedido</li>
-            </ul>
-    <!-- Footer Formulario Registro -->
-    <form class="footer__form" action="" method="post" enctype="text/plain">
-        <h4>¡REGÍSTRATE!</h4>
-            <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="">
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">¡REGÍSTRATE!</h5>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                          <div>
+                            <input class="form-control" type="text" placeholder="Nombre">
+                          </div>
+                          <div>
+                            <input class="form-control" type="text" placeholder="Contraseña">
+                          </div>
+                          <div>
+                            <input class="form-control" type="text" placeholder="Correo">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn-purple btn-submit btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="">
-        </div>
-        <div>
-            <label for="correo">Correo</label>
-            <input type="email" name="correo" id="" placeholder="ejemplo@correo.com">
-        </div>
-            <input class="form-button" type="submit" value="REGISTRARSE">
-    </form>
-    <!-- Footer Copyright -->
-    <h5 class="footer-copyrights">&copy;Chaleco de Mono 2022. Todos los derechos reservados.</h5>
     </footer>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
 </html>

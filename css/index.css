@@ -3,58 +3,29 @@
     margin: 0;
     padding:0;
 }
-/*              GRID BODY            */
-
-.container{
-    display: grid;
-    grid-template-areas:"header"
-                        "main"
-                        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto auto;
-}
 
 /*               HEADER                */
 
 .header{
-    display: flex;
-    grid-area: header;
-    align-items: center;
     background-color: plum;
-    height: 100px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
     
 }
-.nav-link{
-    margin: 18px;
+.nav-item{
+    padding: 0 10px;
 }
-.nav__items__right{
-    margin-left: 15%;
+.nav-link{
+    position: relative;
 }
 .logo{
-    width: 350px;
-}
-.menu{
-    display: flex;
-}
-.menu__list{
-    display: flex;
-    list-style: none;
-}
-.menu__link{
-    padding: 20px;
-}
-.burger{
-    display: none;
+    width: 200px;
 }
 
 /*              MAIN                */
 
-.main{
-    grid-area: main;
-}
+
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
@@ -65,9 +36,7 @@ ul{
 a{
     text-decoration: none;
 }
-.banner__image{
-    height: 580px;
-}
+
 .banner__text{
     text-align: center;
     margin: 30px 200px;
@@ -82,7 +51,7 @@ a{
 .card{
     width: 15%;
     height: fit-content;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-bottom: 50px;
     display: inline-block;
 }
@@ -95,6 +64,7 @@ a{
     padding-top: 0;
 }
 .card__image{
+    height: 400px;
     width: 100%;
 }
 .card__text{
@@ -128,6 +98,13 @@ a{
     border: none;
     padding: 10px;
 }
+.btn__nav{
+    border: none;
+    background-color: plum;
+    padding: 10px;
+    align-items: center;
+}
+
 .btn-submit{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -146,31 +123,21 @@ margin: 80px;
     width: 500px;
     max-height: 300px;
 }
-.article__button{
-    padding: 10px;
-    background-color: blueviolet;
-    color: white;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-}
-.reparacion__section{
-    margin: 80px;
-}
-.reparacion{
+.article__text{
     width: 500px;
-    height: fit-content;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: inline-block;
 }
-/* .antes-y-despues__section{
-    margin: 1px 180px;
-} */
+.dropdown__link, .dropdown-item{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
 .filter__title, .filter__button{
     display: inline;
     margin-left: 1070px;
     margin-top: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 .filter__button{
     border: none;
@@ -181,12 +148,14 @@ margin: 80px;
     line-height: 4;
     margin-left: 80px;
 }
+.BS{
+    border: solid;
+}
 aside{
-    width: 300px;
     float: left;
 }
 .product-section{
-    margin-left: 500px;
+    margin-left: 400px;
 }
 .cargar__button{
     padding: 10px;
@@ -202,12 +171,13 @@ aside{
 }
 .contact-form{
     text-align: justify;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-bottom: 50px;
+}
+.contact__section{
+    justify-content: center;
 }
 .form{
-    margin-left: 500px;
-    
+    margin: 100px;
 }
 .input, .label{
     display: table-cell;
@@ -220,72 +190,41 @@ aside{
 
 .footer{
 
-    grid-area: footer;
+
     background-color: plum;
     font-size: 18px;
 
-    
 }
 .footer__style{
     background-color: plum;
-
 }
 h4{
     font-size: 12px;
 }
 .logo, .footer__links-ayuda, .footer__links-despachos, .footer__form{
-    display: inline-block;
-    padding: 30px 90px;
+
     vertical-align: top;
     }
 .form-control{
     margin-bottom: 5px;
 }
-/*               MOBILE                   */
-@media screen and (max-width: 768px) {
-
-/*HEADER MOBILE*/
-    .burger{
-    display: inline;
-    margin-right: 50px;
-}
-.menu{
-    display: none;
-}
-.header{
-    grid-area: header;
-    background-color: plum;
-    justify-content: space-between;
-}
-/*MAIN MOBILE*/
-.card__title{
-margin-left: 0px;
-}
-.card__title, .card{
-    display: inline;
-    margin-left: 0px;
-}
-.card__rate {
-    margin-left: 20px;
-}
-.card__button{
-    padding: 15px;
-}
-.ayd-card__button{
-    margin: 0px;
-    padding: 15px;
-}
-/* NOSOTROS MOBILE*/
-.banner__text{
-    display: flex;
-    margin: 50px;
-}
-.article__image, .article__content{
-    display: inline;
-}
-}
 
 /*              ANIMACIONES                */
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: blueviolet;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    }
+.nav-link:hover:after{
+    width: 100%;
+}
+
+
 .wrapper{
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;

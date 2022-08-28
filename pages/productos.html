@@ -1,220 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaleco de Mono</title>
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chaleco de Mono</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body>
 <main>
-    <header class="header">
-        <!-- Header Logo -->
-                <img class="logo" src="../images/Frame.svg" alt="">
-        <!-- Menú -->
-        <nav>
-            <div class="burger">
-                <img src="../images/menu_24px.svg" alt="menu button">
+<!-- HEADER -->
+<header class="header ">
+    <nav class=" w-100 p-3 navbar-expand-lg ">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <img class="logo" src="../images/Frame.svg" alt="logo" >
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-xs-12 col-md-6 col-lg-6 collapse navbar-collapse navbar" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+            </li>          
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reparatuchaleco.html">Repara tu Chaleco</a>
+            </li>          
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+            </li>         
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+            <div class=" col-xs-12 col-md-6 col-lg-3 d-flex justify-content-end">
+                <button class="btn__nav" type="submit">
+                <img src="../images/search.svg" alt="">
+                </button>
+                <button class="btn__nav" type="submit">
+                <img src="../images/cart.svg" alt="">
+                </button>
+                <button class="btn__nav" type="submit">
+                <img src="../images/Account.svg" alt="">
+                </button>
             </div>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">INICIO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="./nosotros.html">NOSOTROS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/reparatuchaleco.html">REPARA TU CHALECO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/contacto.html">CONTACTO</a>
-                </li>  
-            </ul>
-        </nav>
-            </header>
+        </div>
+    </div>
+    </div>
+    </nav>
+</header>
 <!-- Sección Filtros Ordenar Por -->
-    </section>
+    </section class="container-fluid " >
+        <div class="row">
         <section class="filtro-ordenar">
         <p class="filter__title">ORDENAR POR:</p>
-        <button class="filter__button">Recomendados</button>
+        <div class="btn-group">
+            <div class="dropdown">
+                <a class="btn-secondary dropdown__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Recomendados
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menor Precio</a></li>
+                <li><a class="dropdown-item" href="#">Mayor Precio</a></li>
+                <li><a class="dropdown-item" href="#">Mejor Puntuación</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <aside>
-<!-- Sección Filtros Precio, Talla, Color y Material -->
-    <section class="filters">
-        <article>
-            <h3 class="card__title">CHALECOS UNISEX</h3>
-            <ul class="filters-menu">
-                <li class="filters-menu__item">
-                    <a class="" href="">PRECIO</a>
-                </li>  
-                <hr>
-                <li class="filters-menu__item">
-                    <a class="" href="">TALLA</a>
-                </li>
-                <hr>  
-                <li class="filters-menu__item">
-                    <a class="" href="">COLOR</a>
-                </li>
-                <hr>  
-                <li class="filters-menu__item">
-                    <a class="" href="">MATERIAL</a>
-                </li>
-                <hr>   
-            </ul>
-        </article>
-    </section>
-    </aside>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"> 
+            <h3>CHALECOS</h3>
+            <!-- DROPDOWN PRECIO -->
+                    <div class="dropdown">
+                        <a class="btn-secondary dropdown__link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Precio
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hasta $10.000</a></li>
+                        <li><a class="dropdown-item" href="#">$10.000 - $20.000</a></li>
+                        <li><a class="dropdown-item" href="#">$20.000 - $30.000</a></li>
+                        <li><a class="dropdown-item" href="#">$30.000 - $40.000</a></li>
+                        </ul>
+                    </div>
+            <!-- DROPDOWN TALLA -->
+                    <div class="dropdown">
+                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Talla
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">XS</a></li>
+                        <li><a class="dropdown-item" href="#">S</a></li>
+                        <li><a class="dropdown-item" href="#">M</a></li>
+                        <li><a class="dropdown-item" href="#">L</a></li>
+                        <li><a class="dropdown-item" href="#">XL</a></li>
+                        </ul>
+                    </div>
+            <!-- DROPDOWN COLOR -->
+                    <div class="dropdown">
+                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Color
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Negro</a></li>
+                        <li><a class="dropdown-item" href="#">Verde</a></li>
+                        <li><a class="dropdown-item" href="#">Rojo</a></li>
+                        <li><a class="dropdown-item" href="#">Azul</a></li>
+                        <li><a class="dropdown-item" href="#">Naranjo</a></li>
+                        <li><a class="dropdown-item" href="#">Beige</a></li>
+                        <li><a class="dropdown-item" href="#">Café</a></li>
+                        </ul>
+                    </div>
+            <!-- DROPDOWN GÉNERO -->
+                    <div class="dropdown">
+                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Género
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mujer</a></li>
+                        <li><a class="dropdown-item" href="#">Hombre</a></li>
+                        <li><a class="dropdown-item" href="#">Niño</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 <!-- Sección Productos -->
-    <section class="product-section">
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <br>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <br>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/Tejido1.jpg" alt="Imagen de mujer con chaleco verde">
-            <section class="card__text"> 
-                <h3 class="card__title">Nombre del Producto</h3>
-                <p class="card__description">Descripción del Producto</p>
-                <a class="card__button" href="">Comprar</a>
-            </section>
-        </article>
-    </section>
-    <section>
-        <p class="cargar__text">Mostrando 12 de 60</p>
-        <br>
-        <a class="cargar__button" href="">CARGAR MÁS PRODUCTOS</a>
-    </section>
-    <br>
-    <br>
-<!-- Footer -->
-<footer class="footer">
-    <!-- Footer Logo -->
-        <img class="logo" src="../images/Frame.svg" alt="">
-    <!-- Footer Sección Ayuda -->
-            <ul class="footer__links-ayuda">
-                <h4>AYUDA</h4>
-                    <li>Políticas de Privacidad</li>
-                    <li>Preguntas Frecuentes</li>
-                    <li>Contáctanos</li>
-            </ul>
-    <!-- Footer Sección Despachos -->
-            <ul class="footer__links-despachos">
-                    <H4>DESPACHOS</H4>
-                        <li>Medios de Pago</li>
-                        <li>Tiempos de Despacho</li>
-                        <li>Términos y Condiciones</li>
-                        <li>Seguimiento de mi Pedido</li>
-            </ul>
-    <!-- Footer Formulario Registro -->
-    <form class="footer__form" action="" method="post" enctype="text/plain">
-        <h4>¡REGÍSTRATE!</h4>
+    <section class="col d-flex flex-wrap justify-content-between product-section">
+            <div class="row d-flex">
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Cárdigan en punto acanalado verde.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco en punto acanalado verde</h5>
+                    <p class="card-text">Chaleco cropped en punto acanalado suave. Modelo entallado con escote en V y botones delante.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Cárdigan en punto acanalado.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco acanalado beige</h5>
+                    <p class="card-text">Modelo de corte relajado con escote en V, botones delante y manga amplia con hombros caídos.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Rosado Niña.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco oversize</h5>
+                    <p class="card-text">Modelo chenilla suave. Modelo de corte relajado con escote en V, botones delante, puños y pretina en punto acanalado.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Gris Hombre.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco sin mangas</h5>
+                    <p class="card-text">Chaleco de mezcla de algodón. Modelo de corte estándar con cuello en V y remate acanalado en cuello, sisas y pretina.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Verde Mujer.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco sin mangas cuello redondo</h5>
+                    <p class="card-text">Chaleco corto sin mangas. Modelo de corte estándar con cuello redondo y remate acanalado en cuello, sisas y pretina</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Café Niña.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco en punto con textura</h5>
+                    <p class="card-text">Chaleco de algodón. Modelo con cuello redondo, botones delante y cuello, puños y pretina en punto acanalado.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Cárdigan acanalado.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cárdigan acanalado celeste</h5>
+                    <p class="card-text">Cárdigan entallado en punto acanalado. Modelo con escote en V, cierre de botones y mangas extralargas.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Blanco Niño.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco en punto fino de algodón</h5>
+                    <p class="card-text">Chaleco en punto fino de algodón suave con botones delante y basta recta. Remate acanalado en cuello, puños y basta.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Cárdigan en punto acanalado rojo.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco en punto acanalado naranjo</h5>
+                    <p class="card-text">Modelo de corte relajado con escote en V, botones delante y manga amplia con hombros marcadamente caídos.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Azul Mujer.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco Azul</h5>
+                    <p class="card-text">Chaleco acabado ligeramente cepillado. Modelo de manga amplia, cuello redondo y remate acanalado en cuello, puños y pretina.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Verde Niño.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco en punto waffle</h5>
+                    <p class="card-text">Chaleco verdeagua en punto waffle de algodón con cuello redondo y remate acanalado en puños y pretina.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+                <img src="../images/Chaleco Beige Hombre.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chaleco sin Mangas</h5>
+                    <p class="card-text">Chaleco sin mangas en punto suave de mezcla de algodón. Modelo de corte estándar con cuello en V y remate acanalado en cuello, sisas y pretina.</p>
+                    <button type="button" class="btn-purple btn-primary">COMPRAR</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        </main>
+<!-- FOOTER -->
+<footer class="footer container-fluid">
+    <div class="row p-5">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <img class="logo" src="../images/Frame.svg" alt="logo" >
+        </div>
+<!-- AYUDA -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h5>AYUDA</h5>
+        <div class="mb-2">
+            <p>Políticas de Privacidad</p>
+        </div>
+        <div class="mb-2">
+            <p>Preguntas Frecuentes</p>
+        </div>        
+        <div class="mb-2">
+            <p>Contáctanos</p>
+        </div>
+    </div>
+        <!-- DESPACHOS -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h5>DESPACHOS</h5>
+        <div class="mb-2">
+            <p>Medios de Pago</p>
+        </div>
+        <div class="mb-2">
+            <p>Tiempos de Despacho</p>
+        </div>        
+        <div class="mb-2">
+            <p>Términos y Condiciones</p>
+        </div>
+        <div class="mb-2">
+            <p>Seguimiento de mi Pedido</p>
+        </div>
+        </div>
+<!-- REGÍSTRATE -->
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h5>¡REGÍSTRATE!</h5>
+        <form class="footer__form col-8" action="" method="post" enctype="text/plain">
+            <div class="input-group mb-3">
             <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="">
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <input class="form-control" type="text" placeholder="Contraseña">
+            </div>
+            <div>
+                <input class="form-control" type="text" placeholder="Correo">
+            </div>
+            </div>
+            <button type="submit" class="btn-purple btn-submit btn-primary">Submit</button>
+        </form>
         </div>
-        <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="">
-        </div>
-        <div>
-            <label for="correo">Correo</label>
-            <input type="email" name="correo" id="" placeholder="ejemplo@correo.com">
-        </div>
-            <input class="form-button" type="submit" value="REGISTRARSE">
-    </form>
-    <!-- Footer Copyright -->
-    <h5 class="footer-copyrights">&copy;Chaleco de Mono 2022. Todos los derechos reservados.</h5>
-    </footer>
-    </main>
-    </body>
-    </html>
+        <div class="col-xs-12">
+            <h6 class="text-center p-5 footer-copyrights">&copy;Chaleco de Mono 2022. Todos los derechos reservados.</h6>
+    </div>
+</footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

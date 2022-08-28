@@ -1,157 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaleco de Mono</title>
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chaleco de Mono</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body>
 <main>
-    <header class="header">
-        <!-- Header Logo -->
-                <img class="logo" src="../images/Frame.svg" alt="">
-        <!-- Menú -->
-        <nav>
-            <div class="burger">
-                <img src="../images/menu_24px.svg" alt="menu button">
-            </div>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">INICIO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="./nosotros.html">NOSOTROS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/reparatuchaleco.html">REPARA TU CHALECO</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>  
-                <li class="menu__item">
-                    <a class="menu__link" href="../pages/contacto.html">CONTACTO</a>
-                </li>  
-            </ul>
-        </nav>
-            </header>
-<!-- Descripción Repara tu Chaleco -->
-    <section>
-        <p class="banner__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus vero suscipit, dolore itaque hic nesciunt quis tenetur omnis totam, sunt ducimus, libero distinctio dolorem deleniti nulla ipsa quaerat aspernatur aliquid.
-            Blanditiis ex quaerat molestias amet. Explicabo praesentium, possimus facere quia iste corporis nostrum, sunt nam similique laboriosam, aliquam incidunt quidem eveniet veniam dolor placeat deserunt! Modi nam necessitatibus quidem iste?
-            Rem iure animi repudiandae at et delectus ipsa eveniet nesciunt beatae, explicabo dolorum asperiores sapiente nemo harum qui laudantium consectetur, excepturi neque accusantium sit quis fugiat voluptates. Deserunt, hic repellat?
-        </p>
-    </section>
+<!-- HEADER -->
+<header class="header ">
+  <nav class=" w-100 p-3 navbar-expand-lg ">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <img class="logo" src="../images/Frame.svg" alt="logo" >
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-xs-12 col-md-6 col-lg-6 collapse navbar-collapse navbar" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reparatuchaleco.html">Repara tu Chaleco</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+          </li>         
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class=" col-xs-12 col-md-6 col-lg-3 d-flex justify-content-end">
+          <button class="btn__nav" type="submit">
+            <img src="../images/search.svg" alt="">
+          </button>
+          <button class="btn__nav" type="submit">
+            <img src="../images/cart.svg" alt="">
+          </button>
+          <button class="btn__nav" type="submit">
+            <img src="../images/Account.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+        <!-- Descripción Repara tu Chaleco -->
+        <div>
+          <p class="banner__text" >
+            ¡No botes a la basura ese chaleco que te tejió tu abuelita o tu sweater favorito que te regalaron con tanto cariño para tu cumpleaños! Tenemos la solución. En Chaleco de Mono realizamos distintos tipos de reparaciones de prendas de lana de acuerdo al diseño que más te guste. Podemos dejar reparar el agujero de tu chaleco con lana o hilo similar al original o realizar un atractivo diseño bordado.
+          </p>
+          </div>
+
 <!-- Sección Reparación en Tienda -->
-    <section class="reparacion__section">
-        <article class="reparacion">
-        <img class="article__image" src="../images/tienda2.jpg" alt="">
-        <h3 class="article__title">REPARACIÓN EN TIENDA</h3>
-        <br>
-        <p class="article__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos voluptatibus enim! Ducimus soluta eius provident. Doloremque molestiae cupiditate ducimus. Nulla odio reprehenderit enim expedita quasi. Commodi cupiditate repellendus quaerat!
-        Ut placeat maiores porro, quis fuga culpa explicabo deserunt? Commodi placeat alias deserunt aspernatur qui ipsa sit voluptas quibusdam quia delectus eius odit iusto cum reiciendis, rerum assumenda? Aut, accusamus?
-        Consectetur dolor, dolorum dolores consequuntur omnis inventore adipisci accusantium officiis necessitatibus, blanditiis nihil sequi quia unde non ratione. Quam suscipit quisquam dolorum sint corporis vitae libero explicabo iure! Officiis, quas.</p>
-        <br>
-        <button class="article__button">VER DIRECCIÓN</button>
-        </article>
-<!-- Sección Reparación por Envío -->
-        <article class="reparacion">
-            <img class="article__image" src="../images/delivery.jpg" alt="">
-            <h3 class="article__title">REPARACIÓN POR ENVÍO</h3>
-            <br>
-            <p class="article__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos voluptatibus enim! Ducimus soluta eius provident. Doloremque molestiae cupiditate ducimus. Nulla odio reprehenderit enim expedita quasi. Commodi cupiditate repellendus quaerat!
-            Ut placeat maiores porro, quis fuga culpa explicabo deserunt? Commodi placeat alias deserunt aspernatur qui ipsa sit voluptas quibusdam quia delectus eius odit iusto cum reiciendis, rerum assumenda? Aut, accusamus?
-            Consectetur dolor, dolorum dolores consequuntur omnis inventore adipisci accusantium officiis necessitatibus, blanditiis nihil sequi quia unde non ratione. Quam suscipit quisquam dolorum sint corporis vitae libero explicabo iure! Officiis, quas.</p>
-            <br>
-            <button class="article__button">COTIZAR</button>
-            </article>
+<div class="container">
+  
+    <section class="row justify-content-center reparacion__section">
+          <div class="card col-md-5 reparacion" style="width: 35rem;">
+            <img src="../images/tienda.jpg" class="card-img-top card__image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">REPARACIÓN EN TIENDA</h5>
+              <p class="card-text">Si vives en Santiago, puedes visitarnos en nuestra tienda y dejar tu prenda para reparación. Un especialista evaluará el estado de tu tejido y te propondrá una solución. Nuestra tienda está ubicada en Granaderos 1165, Providencia. Se encuentra a una cuadra del metro Manuel Montt (Línea 1).</p>
+              <button type="button" class="mt-auto btn-purple btn-primary">VER MAPA</button>
+            </div>
+          </div>
+          <!-- Sección Reparación por Envío -->
+          <div class="card col-md-5 reparacion" style="width: 35rem;">
+            <img src="../images/delivery.jpg" class="card-img-top card__image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">REPARACIÓN POR ENVÍO</h5>
+              <p class="card-text">En caso que estés lejos de nosotros ¡no hay problema! Puedes enviar tu prenda a través de una empresa de distribución (Fedex, Starken, Correos de Chile). Antes de realizar el envío, deberás contactar a nuestro especialista quien luego de evaluar el estado de tu prenda te dará una cotización. Recuerda que tú debes pagar el envío. Una vez que reparemos tu prenda te mandaremos tu tejido reparado a través de un envío por pagar.</p>
+              <button type="button" class="mt-auto btn-purple btn-primary">COTIZAR</button>
+            </div>
+          </div>
+      </section>
     </section>
-    <br>
-<!-- Sección Antes y Después Reseñas -->
-    <section class="antes-y-despues__section">
-        <h2 class="product-section__title">ANTES Y DESPUÉS</h2>
-        <article class="card">
-            <img class="card__image" src="../images/antes y después.png" alt="Imagen de mujer con chaleco verde">
-            <img class="card__rate" src="../images/Calificación.svg" alt="">
-            <section class="card__text"> 
-                <h3 class="card__title">Tipo de Reparación</h3>
-                <p class="card__description">Descripción de la Reparación</p>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/antes y después.png" alt="Imagen de mujer con chaleco verde">
-            <img class="card__rate" src="../images/Calificación.svg" alt="">
-            <section class="card__text"> 
-                <h3 class="card__title">Tipo de Reparación</h3>
-                <p class="card__description">Descripción de la Reparación</p>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/antes y después.png" alt="Imagen de mujer con chaleco verde">
-            <img class="card__rate" src="../images/Calificación.svg" alt="">
-            <section class="card__text"> 
-                <h3 class="card__title">Tipo de Reparación</h3>
-                <p class="card__description">Descripción de la Reparación</p>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/antes y después.png" alt="Imagen de mujer con chaleco verde">
-            <img class="card__rate" src="../images/Calificación.svg" alt="">
-            <section class="card__text"> 
-                <h3 class="card__title">Tipo de Reparación</h3>
-                <p class="card__description">Descripción de la Reparación</p>
-            </section>
-        </article>
-        <article class="card">
-            <img class="card__image" src="../images/antes y después.png" alt="Imagen de mujer con chaleco verde">
-            <img class="card__rate" src="../images/Calificación.svg" alt="">
-            <section class="card__text"> 
-                <h3 class="card__title">Tipo de Reparación</h3>
-                <p class="card__description">Descripción de la Reparación</p>
-            </section>
-        </article>
+</div>
+<!-- Sección Antes y Después -->
+<section class="mb-5">
+    <section class="ayd__section">
+        <h2 class="lo-nuevo__section__title">ANTES Y DESPUÉS</h2>
+        <div class="row">
+        <div class="card" style="width: 14rem;" >
+            <img src="../images/Reparación Chaleco Café.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <img class="card__rate" src="../images/Calificación.svg" alt="">
+              <h5 class="card-title">Reparación con parche</h5>
+              <p class="card-text">Codos desgastados reparados con parches de fieltro.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+            <img src="../images/Reparación Chaleco Gris-Negro.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <img class="card__rate" src="../images/Calificación.svg" alt="">
+              <h5 class="card-title">Reparación tejido original</h5>
+              <p class="card-text">Agujero reparado con hilo.</p>
+            </div>
+        </div>        
+        <div class="card" style="width: 14rem;" >
+            <img src="../images/Reparación Chaleco Rosado.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <img class="card__rate" src="../images/Calificación.svg" alt="">
+              <h5 class="card-title">Reparación con bordado</h5>
+              <p class="card-text">Agujero reparado con bordado multicolor.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+            <img src="../images/Reparación Chaleco Verde.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <img class="card__rate" src="../images/Calificación.svg" alt="">
+              <h5 class="card-title">Reparación con color</h5>
+              <p class="card-text">Manga reparada con lana de diferente color.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;" >
+            <img src="../images/Reparación Chaleco Gris.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <img class="card__rate" src="../images/Calificación.svg" alt="">
+              <h5 class="card-title">Reparación tejido original</h5>
+              <p class="card-text">Agujero reparado con lana.</p>
+            </div>
+        </div>
+        </div>
     </section>
-<!-- Footer -->
-<footer class="footer">
-    <!-- Footer Logo -->
-        <img class="logo" src="../images/Frame.svg" alt="">
-    <!-- Footer Sección Ayuda -->
-            <ul class="footer__links-ayuda">
-                <h4>AYUDA</h4>
-                    <li>Políticas de Privacidad</li>
-                    <li>Preguntas Frecuentes</li>
-                    <li>Contáctanos</li>
-            </ul>
-    <!-- Footer Sección Despachos -->
-            <ul class="footer__links-despachos">
-                    <H4>DESPACHOS</H4>
-                        <li>Medios de Pago</li>
-                        <li>Tiempos de Despacho</li>
-                        <li>Términos y Condiciones</li>
-                        <li>Seguimiento de mi Pedido</li>
-            </ul>
-    <!-- Footer Formulario Registro -->
-    <form class="footer__form" action="" method="post" enctype="text/plain">
-        <h4>¡REGÍSTRATE!</h4>
-            <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="">
+    <div class="text-center">
+      <button type="button" class="btn-purple btn-primary">REPARAR MI CHALECO</button>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer container-fluid">
+  <div class="row p-5">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <img class="logo" src="../images/Frame.svg" alt="logo" >
+      </div>
+<!-- AYUDA -->
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5>AYUDA</h5>
+        <div class="mb-2">
+          <p>Políticas de Privacidad</p>
         </div>
-        <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="">
+        <div class="mb-2">
+          <p>Preguntas Frecuentes</p>
+        </div>        
+        <div class="mb-2">
+          <p>Contáctanos</p>
         </div>
-        <div>
-            <label for="correo">Correo</label>
-            <input type="email" name="correo" id="" placeholder="ejemplo@correo.com">
+      </div>
+      <!-- DESPACHOS -->
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5>DESPACHOS</h5>
+      <div class="mb-2">
+        <p>Medios de Pago</p>
+      </div>
+      <div class="mb-2">
+        <p>Tiempos de Despacho</p>
+      </div>        
+      <div class="mb-2">
+        <p>Términos y Condiciones</p>
+      </div>
+      <div class="mb-2">
+        <p>Seguimiento de mi Pedido</p>
+      </div>
+    </div>
+<!-- REGÍSTRATE -->
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5>¡REGÍSTRATE!</h5>
+      <form class="footer__form col-8" action="" method="post" enctype="text/plain">
+        <div class="input-group mb-3">
+          <div>
+            <input class="form-control" type="text" placeholder="Nombre">
+          </div>
+          <div>
+            <input class="form-control" type="text" placeholder="Contraseña">
+          </div>
+          <div>
+            <input class="form-control" type="text" placeholder="Correo">
+          </div>
         </div>
-            <input class="form-button" type="submit" value="REGISTRARSE">
-    </form>
-    <!-- Footer Copyright -->
-    <h5 class="footer-copyrights">&copy;Chaleco de Mono 2022. Todos los derechos reservados.</h5>
-    </footer>
+        <button type="submit" class="btn-purple btn-submit btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-xs-12">
+        <h6 class="text-center p-5 footer-copyrights">&copy;Chaleco de Mono 2022. Todos los derechos reservados.</h6>
+      </div>
+</footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
     </html>

@@ -5,12 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chaleco de Mono</title>
-        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../sass/styles.css">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
     <body>
-<main>
 <!-- HEADER -->
 <header class="header ">
     <nav class=" w-100 p-3 navbar-expand-lg ">
@@ -41,13 +40,13 @@
             </li>
         </ul>
             <div class=" col-xs-12 col-md-6 col-lg-3 d-flex justify-content-end">
-                <button class="btn__nav" type="submit">
+                <button class="nav-btn" type="submit">
                 <img src="../images/search.svg" alt="">
                 </button>
-                <button class="btn__nav" type="submit">
+                <button class="nav-btn" type="submit">
                 <img src="../images/cart.svg" alt="">
                 </button>
-                <button class="btn__nav" type="submit">
+                <button class="nav-btn" type="submit">
                 <img src="../images/Account.svg" alt="">
                 </button>
             </div>
@@ -56,31 +55,35 @@
     </div>
     </nav>
 </header>
-<!-- Sección Filtros Ordenar Por -->
-    </section class="container-fluid " >
+
+<!-- FILTRO ORDENAR POR -->
+<main>
+    <section class=" container-fluid p-4" >
         <div class="row">
         <section class="filtro-ordenar">
-        <p class="filter__title">ORDENAR POR:</p>
-        <div class="btn-group">
-            <div class="dropdown">
+            <p class="filter__title">ORDENAR POR:</p>
+            <div class="btn-group">
+                <div class="dropdown">
                 <a class="btn-secondary dropdown__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Recomendados
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Menor Precio</a></li>
-                <li><a class="dropdown-item" href="#">Mayor Precio</a></li>
-                <li><a class="dropdown-item" href="#">Mejor Puntuación</a></li>
-                </ul>
+                    Recomendados
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Menor Precio</a></li>
+                    <li><a class="dropdown-item" href="#">Mayor Precio</a></li>
+                    <li><a class="dropdown-item" href="#">Mejor Puntuación</a></li>
+                    </ul>
+                </div>
             </div>
+        </section>
         </div>
     </section>
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-2"> 
-            <h3>CHALECOS</h3>
-            <!-- DROPDOWN PRECIO -->
+<!-- FILTRO CHALECOS -->
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-2">
+                    <h3>CHALECOS</h3>
+<!-- DROPDOWN PRECIO -->
                     <div class="dropdown">
                         <a class="btn-secondary dropdown__link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Precio
@@ -92,7 +95,7 @@
                         <li><a class="dropdown-item" href="#">$30.000 - $40.000</a></li>
                         </ul>
                     </div>
-            <!-- DROPDOWN TALLA -->
+<!-- DROPDOWN TALLA -->
                     <div class="dropdown">
                         <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Talla
@@ -105,7 +108,7 @@
                         <li><a class="dropdown-item" href="#">XL</a></li>
                         </ul>
                     </div>
-            <!-- DROPDOWN COLOR -->
+<!-- DROPDOWN COLOR -->
                     <div class="dropdown">
                         <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Color
@@ -120,7 +123,7 @@
                         <li><a class="dropdown-item" href="#">Café</a></li>
                         </ul>
                     </div>
-            <!-- DROPDOWN GÉNERO -->
+<!-- DROPDOWN GÉNERO -->
                     <div class="dropdown">
                         <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Género
@@ -132,10 +135,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-<!-- Sección Productos -->
-    <section class="col d-flex flex-wrap justify-content-between product-section">
-            <div class="row d-flex">
+
+<!-- SECCÓN PRODUCTOS -->
+    <div class="col-9">
+        <div class="row d-flex">
             <div class="card" style="width: 16rem;">
                 <img src="../images/Cárdigan en punto acanalado verde.svg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -232,9 +235,11 @@
                     <button type="button" class="btn-purple btn-primary">COMPRAR</button>
                 </div>
             </div>
-            </div>
-        </section>
-        </main>
+        </div>
+    </div>
+</div>
+
+</main>
 <!-- FOOTER -->
 <footer class="footer container-fluid">
     <div class="row p-5">

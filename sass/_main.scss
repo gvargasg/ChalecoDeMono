@@ -1,0 +1,124 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.banner__text{
+    text-align: center;
+    margin: 30px 200px;
+}
+
+.lo-nuevo__section, .ayd__section{
+    padding-left: 10%;
+}
+
+.lo-nuevo__section__title{
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+
+.card{
+    width: 15%;
+    height: fit-content;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: inline-block;
+    .card-img-top{
+        padding-top: 10px;
+        border-radius: 5px;
+    }
+    .card__rate{
+        padding-bottom: 5px;
+        padding-top: 0;
+    }
+    .card__image{
+        height: 400px;
+        width: 100%;
+    }
+    .card__text{
+        margin: 5%;
+    }
+    .card__title{
+        font-family: 'Alef', sans-serif;
+        font-weight: 700;
+    }
+    .card__description{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .card__button{
+        line-height: 5;
+        padding: 5%;
+        background-color: $secondary-color;
+        color: white;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+.btn, .btn-purple{
+    background-color: $secondary-color;
+    color: white;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+.btn-submit{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.article{
+    display: table;
+    margin: 80px;
+    .article__content{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+    line-height: 2;
+}
+    .article__image{
+    width: 500px;
+    max-height: 300px;
+}
+    .article__text{
+    width: 500px;
+}
+}
+
+.dropdown__link, .dropdown-item{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.filter__title{
+    display: inline;
+    margin-left: 1070px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.contact-form{
+    text-align: justify;
+    margin-bottom: 50px;
+    .contact__section{
+        justify-content: center;
+    }
+}
+
+

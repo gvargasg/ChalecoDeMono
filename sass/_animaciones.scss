@@ -5,14 +5,14 @@
     background-color: $secondary-color;
     height: 5px;
     width: 0;
-    left: 0;
-    bottom: 0;
+    left: map-get($estilos, izquierda);
+    bottom: map-get($estilos, abajo);
     transition: 0.3s;
     }
     }
     .nav-link{
         &:hover:after{
-        width: 100%;
+        width: map-get($estilos, ancho);
         }
 }
 
@@ -24,7 +24,7 @@
     position: relative;
     .wrapper__image{
         display: block;
-        width: 100%;
+        width: map-get($estilos, ancho);
         height: auto;
     }
     .wrapper__content{
@@ -52,10 +52,10 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    left: map-get($estilos, izquierda);
+    right: map-get($estilos, abajo);
+    height: map-get($estilos, altura);
+    width: map-get($estilos, ancho);
     opacity: 0;
     transition: .5 ease;
     background-color: #0f0f0f;

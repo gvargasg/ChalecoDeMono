@@ -1,10 +1,10 @@
 .footer{
     background-color: $main-color;
-    font-size: 18px;
+    @include font ($text-size: 48px);
 }
 
 h4{
-    font-size: 12px;
+@include font ($text-size: 12px);
 }
 
 

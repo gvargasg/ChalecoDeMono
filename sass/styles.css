@@ -99,34 +99,6 @@ body a {
   line-height: 1;
 }
 
-.card .card__button {
-  line-height: 5;
-  padding: 5%;
-  background-color: #8a2ae2;
-  color: white;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-.btn, .btn-purple {
-  background-color: #8a2ae2;
-  color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-}
-
-.btn-submit {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .article {
   display: table;
   margin: 80px;
@@ -244,5 +216,18 @@ h4 {
   -webkit-transition: .5 ease;
   transition: .5 ease;
   background-color: #0f0f0f;
+}
+
+.btn, .btn-purple {
+  background-color: #8a2ae2;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

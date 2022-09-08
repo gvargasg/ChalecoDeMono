@@ -1,9 +1,6 @@
 .header{
     background-color: $main-color;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    
+    @include font ('Josefin Sans', 36px, 600);
 }
 .logo{
     width: 200px;

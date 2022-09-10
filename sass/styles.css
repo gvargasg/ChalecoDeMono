@@ -116,6 +116,10 @@ body a {
   max-height: 300px;
 }
 
+.article__image {
+  border-radius: 5px;
+}
+
 .article .article__text {
   width: 500px;
 }
@@ -129,11 +133,13 @@ body a {
 
 .filter__title {
   display: inline;
-  margin-left: 1070px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
 }
 
+.filtro-ordenar{
+  margin-right: 170px;
+}
 .contact-form {
   text-align: justify;
   margin-bottom: 50px;

@@ -55,9 +55,6 @@ body{
     }
 }
 
-
-
-
 .article{
     display: table;
     margin: 80px;
@@ -71,6 +68,9 @@ body{
     width: 500px;
     max-height: 300px;
 }
+.image__style{
+    border-radius: 15px;
+}
     .article__text{
     width: 500px;
 }
@@ -79,11 +79,6 @@ body{
 .dropdown__link, .dropdown-item{
     text-decoration: none;
     color: black;
-}
-
-.filter__title{
-    display: inline;
-    margin-left: 1070px;
 }
 
 .contact-form{

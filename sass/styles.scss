@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap');
-*{
-    margin: 0;
-    padding:0;
-}
-
-@import "./mixins",
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap'),
         "./colors",
         "./header",
         "./main",
@@ -13,3 +7,10 @@
         "./extends",
         "./buttons",
         "./maps";
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+

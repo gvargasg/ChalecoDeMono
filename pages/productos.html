@@ -7,7 +7,7 @@
         <meta name="description" content="Productos, venta de chalecos de lana">
         <meta name="keywords" content="CHALECO, SWEATER, LANA, TEJIDO">    
         <title>Productos | Chaleco de Mono</title>
-        <link rel="stylesheet" href="../sass/styles.css">
+        <link rel="stylesheet" href="../sass/styles/styles.css">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
@@ -86,57 +86,125 @@
                 <div class="col-2">
                     <h3>CHALECOS</h3>
 <!-- DROPDOWN PRECIO -->
-                    <div class="dropdown">
-                        <a class="btn-secondary dropdown__link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Precio
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Hasta $10.000</a></li>
-                        <li><a class="dropdown-item" href="#">$10.000 - $20.000</a></li>
-                        <li><a class="dropdown-item" href="#">$20.000 - $30.000</a></li>
-                        <li><a class="dropdown-item" href="#">$30.000 - $40.000</a></li>
-                        </ul>
-                    </div>
-<!-- DROPDOWN TALLA -->
-                    <div class="dropdown">
-                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Talla
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">XS</a></li>
-                        <li><a class="dropdown-item" href="#">S</a></li>
-                        <li><a class="dropdown-item" href="#">M</a></li>
-                        <li><a class="dropdown-item" href="#">L</a></li>
-                        <li><a class="dropdown-item" href="#">XL</a></li>
-                        </ul>
-                    </div>
-<!-- DROPDOWN COLOR -->
-                    <div class="dropdown">
-                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Color
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Negro</a></li>
-                        <li><a class="dropdown-item" href="#">Verde</a></li>
-                        <li><a class="dropdown-item" href="#">Rojo</a></li>
-                        <li><a class="dropdown-item" href="#">Azul</a></li>
-                        <li><a class="dropdown-item" href="#">Naranjo</a></li>
-                        <li><a class="dropdown-item" href="#">Beige</a></li>
-                        <li><a class="dropdown-item" href="#">Café</a></li>
-                        </ul>
-                    </div>
-<!-- DROPDOWN GÉNERO -->
-                    <div class="dropdown">
-                        <a class="btn-secondary dropdown__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Género
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mujer</a></li>
-                        <li><a class="dropdown-item" href="#">Hombre</a></li>
-                        <li><a class="dropdown-item" href="#">Niño</a></li>
-                        </ul>
-                    </div>
-                </div>
+
+
+
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Precio
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <a class="filter-color" href="">
+                <p>Hasta $10.000</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>$10.000 - 20.000</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>$20.000 - 30.000</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>$30.000 - 40.000</p>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Talla
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <a class="filter-color" href="">
+                <p>XS</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>S</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>M</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>L</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>XL</p>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Color
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <a class="filter-color" href="">
+                <p>Negro</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Verde</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Rojo</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Azul</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Naranjo</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Beige</p>
+            </a>
+            <a class="filter-color" href="">
+                <p>Café</p>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Género
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+              <a class="filter-color" href="">
+                  <p>Mujer</p>
+              </a>
+              <a class="filter-color" href="">
+                  <p>Hombre</p>
+              </a>
+              <a class="filter-color" href="">
+                  <p>Niña</p>
+              </a>
+              <a class="filter-color" href="">
+                  <p>Niño</p>
+              </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 <!-- SECCÓN PRODUCTOS -->
     <div class="col-9">
@@ -240,6 +308,12 @@
         </div>
     </div>
 </div>
+
+
+<button type="button" class="button mx-auto d-block mb-5" onclick="this.classList.toggle('button--loading')">
+    <span class="button__text">CARGAR MÁS PRODUCTOS</span>
+</button>
+
 
 </main>
 <!-- FOOTER -->
